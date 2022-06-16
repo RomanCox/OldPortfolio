@@ -1,0 +1,23 @@
+.mainBlock {
+  height: 100vh;
+  background-color: #1f1f20;
+
+  .mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+
+    .welcome {
+      width: 300px;
+      background-color: #f7f7f7;
+    }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-color: #f7f7f7;
+    }
+  }
+}

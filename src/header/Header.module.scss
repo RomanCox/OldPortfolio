@@ -1,0 +1,16 @@
+.header {
+  height: 80px;
+  background-color: #b0b0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nav {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
