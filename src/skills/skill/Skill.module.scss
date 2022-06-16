@@ -22,13 +22,13 @@
     padding: 25px 0;
 
     .skillTitle {
-      @include text($titleFontFamily, 16px, 700, 1.2, $primaryTextColor);
+      @include text($titleFontFamily, 16px, 700, 1.2, normal, $primaryTextColor);
       letter-spacing: 1px;
       margin: 0 0 5px;
     }
 
     .description {
-      @include text($textFontFamily, 12px, 400, 1.8, $secondaryTextColor);
+      @include text($textFontFamily, 12px, 400, 1.8, normal, $secondaryTextColor);
     }
   }
 }

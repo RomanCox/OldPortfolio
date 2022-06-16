@@ -21,7 +21,7 @@
 
         & h3 {
           margin-top: 0;
-          @include text($titleFontFamily, 1.5rem, 700, 1.2, $primaryTextColor);
+          @include text($titleFontFamily, 1.5rem, 700, 1.2, normal, $primaryTextColor);
         }
 
         .contactForm {
@@ -48,11 +48,11 @@
         & h4 {
           margin-top: 0;
           margin-bottom: 12px;
-          @include text($titleFontFamily, 1.5rem, 700, 1.2, $primaryTextColor);
+          @include text($titleFontFamily, 1.5rem, 700, 1.2, normal, $primaryTextColor);
         }
 
         .preContacts {
-          @include text($textFontFamily, 15px, 400, 1.95, $secondaryTextColor);
+          @include text($textFontFamily, 15px, 400, 1.95, normal, $secondaryTextColor);
           overflow: hidden;
         }
 
@@ -86,7 +86,7 @@
                 &:before {
                   /*@include text($iconEntypoFontFamily, 36px, 400, 1, $primaryColor);
                   content: '\E809';*/
-                  @include text($iconDashIconsFontFamily, 36px, 400, 1, $primaryColor);
+                  @include text($iconDashIconsFontFamily, 36px, 400, 1, normal, $primaryColor);
                   content: '\F110';
                 }
               }
@@ -97,7 +97,7 @@
                 &:before {
                   /*@include text($iconDashIconsFontFamily, 36px, 400, 1, $primaryColor);
                   content: '\F319';*/
-                  @include text($iconIonIconsFontFamily, 36px, 400, 1, $primaryColor);
+                  @include text($iconIonIconsFontFamily, 36px, 400, 1, normal, $primaryColor);
                   content: '\F301';
                 }
               }
@@ -106,7 +106,7 @@
                 margin-bottom: 13px;
                 position: relative;
                 &:before {
-                  @include text($iconEntypoFontFamily, 36px, 400, 1, $primaryColor);
+                  @include text($iconEntypoFontFamily, 36px, 400, 1, normal, $primaryColor);
                   content: '\E8BB';
                 }
               }
@@ -116,7 +116,7 @@
                 position: relative;
                 @include flex(row, center, center);
                 &:before {
-                  @include text($iconIonIconsFontFamily, 36px, 400, 1, $primaryColor);
+                  @include text($iconIonIconsFontFamily, 36px, 400, 1, normal, $primaryColor);
                   content: '\F239';
                 }
               }
@@ -133,7 +133,7 @@
               }
               @include flex(column, flex-start, start);
               .nameTitle {
-                @include text($titleFontFamily, 15px, 600, 1, $primaryTextColor)
+                @include text($titleFontFamily, 15px, 600, 1, normal, $primaryTextColor)
               }
               .name {
                 .link {
@@ -142,7 +142,7 @@
                     color: $secondaryTextColor;
                   }
                 }
-                @include text($textFontFamily, 14px, 400, 1.95, $secondaryTextColor)
+                @include text($textFontFamily, 14px, 400, 1.95, normal, $secondaryTextColor)
               }
             }
           }
