@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Main.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
 import hexagon from '../assets/image/hexagons.jpg';
+import {Nav} from "../nav/Nav";
 
 export const Main = () => {
 
@@ -12,21 +12,24 @@ export const Main = () => {
     };
 
     return (
-        <section className={style.mainBlock} style={hexagonBG}>
-            <div className={style.container}>
-                <div className={style.center}>
-                    {/*<div className={`${styleContainer.container} ${style.mainContainer}`}>*/}
-                    <div className={style.textContainer}>
-                        <h1>Roman Cox</h1>
-                        <h4>I'm a
-                            <span className={style.text}>
-                                <span className={style.hiddenText}>developer</span>
-                                <span className={style.hiddenText}>freelancer</span>
+        <div className={style.body}>
+            <Nav/>
+            <section className={style.mainBlock} style={hexagonBG}>
+                <div className={style.container}>
+                    <div className={style.center}>
+                        {/*<div className={`${styleContainer.container} ${style.mainContainer}`}>*/}
+                        <div className={style.textContainer}>
+                            <h1>Roman Cox</h1>
+                            <h4>{`I'm a `}
+                                <span className={style.text}>
+                                <span className={style.dropdownText}>developer</span>
+                                <span className={`${style.dropdownText} ${style.hiddenText}`}>freelancer</span>
                             </span>
-                        </h4>
+                            </h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 }

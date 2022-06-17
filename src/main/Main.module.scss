@@ -1,74 +1,85 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
-.mainBlock {
+.body {
   height: 100vh;
+  width: 100vw;
   background-color: #1f1f20;
+  overflow: hidden;
 
-  .container {
+  .mainBlock {
     height: 100%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     width: 100%;
 
-    .center {
+    .container {
       height: 100%;
-      @include flex(row, center, center);
-      flex-wrap: wrap;
-      margin-left: -15px;
-      margin-right: -15px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
 
-      .textContainer {
-        height: 200px;
-        max-width: 100%;
-        text-align: center;
-        flex: 0 0 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        position: relative;
+      .center {
+        height: 100%;
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
 
-        &::selection {
-          background-color: #fff300;
-          color: #fff;
-        }
-
-        &>h1 {
-          @include text($textFontFamily, 52px, 700, 1.2, 1, #fff);
-        }
-
-        &>h4 {
-          @include text($textFontFamily, 30px, 400, 1.2, 0.3px, #fff);
-        }
-
-
-
-        .text {
-          display: inline-block;
+        .textContainer {
+          height: 200px;
+          max-width: 100%;
+          text-align: center;
+          flex: 0 0 100%;
+          padding-left: 15px;
+          padding-right: 15px;
           position: relative;
-          text-align: left;
-          vertical-align: top;
 
-          &::after {
-            //background-color: #b9b9b9;
-            background-color: $secondaryTextColor;
-            content: '';
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 2px;
+          &::selection {
+            background-color: #fff300;
+            color: #fff;
           }
 
-          .hiddenText {
-
+          & > h1 {
+            @include text($textFontFamily, 52px, 700, 1.2, 1, #fff);
           }
-        }
 
-        @media screen and (max-width: 767px) {
-          justify-content: center;
+          & > h4 {
+            @include text($textFontFamily, 30px, 400, 1.2, 0.3px, #fff);
+          }
+
+          .text {
+            display: inline-block;
+            position: relative;
+            text-align: left;
+            vertical-align: top;
+            width: 158px;
+
+            &::after {
+              //background-color: #b9b9b9;
+              background-color: $secondaryTextColor;
+              content: '';
+              height: 100%;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 2px;
+            }
+
+            .dropdownText {
+              overflow: hidden;
+              opacity: 1;
+            }
+
+            .hiddenText {
+              opacity: 0;
+            }
+          }
+
+          @media screen and (max-width: 767px) {
+            justify-content: center;
+          }
         }
       }
     }

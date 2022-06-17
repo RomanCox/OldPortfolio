@@ -9,19 +9,6 @@ export const Contacts = () => {
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Get in Touch'}/>
                 <div className={style.contactInfo}>
-                    {/*<div className={style.formContainer}>
-                        <form className={style.contactForm}>
-                            <input type='text' placeholder={'Name'}/>
-                            <input type='text' placeholder={'Email'}/>
-                            <textarea placeholder={'Message'}/>
-                            <button type='submit' className={style.submitBtn}>Send message</button>
-                        </form>
-                    </div>
-                    <div className={style.contactContainer}>
-                        <h3>Contact Info</h3>
-                        <p>Always available for freelance work if the right project comes along, Feel free to contact
-                            me!</p>
-                    </div>*/}
                     <div className={style.formContainer}>
                         <h3>Message Me</h3>
                         <form className={style.contactForm}>
@@ -30,7 +17,6 @@ export const Contacts = () => {
                                 <input type='text' placeholder={'Email'}/>
                             </div>
                             <div className={style.fromMessageBlock}>
-                                <input type='text' placeholder={'Email'}/>
                                 <textarea placeholder={'Message'}/>
                             </div>
                             <button type='submit'>Send message</button>

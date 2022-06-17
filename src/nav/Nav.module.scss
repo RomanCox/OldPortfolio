@@ -1,6 +1,64 @@
-.nav {
-    border: 1px solid;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+@import '../common/styles/sass/mixins';
+
+.header {
+  background: transparent;
+  padding: 23px 50px;
+  display: flex;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+  & > a {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: inherit;
+    margin-right: 1rem;
+    padding-bottom: 0.3125rem;
+    padding-top: 0.3125rem;
+    white-space: nowrap;
+    transition: all .15s ease-in-out;
+    background-color: transparent;
+    cursor: pointer;
+    & > img {
+      width: 110px;
+    }
+  }
+
+  .navContainer {
+    width: 100%;
+    @include flex(row, flex-end, center);
+
+    .navbar {
+      margin: 0 32px 0 auto;
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      padding-inline-start: 40px;
+
+      .navbarItem {
+        display: list-item;
+        text-align: -webkit-match-parent;
+
+        .navLink {
+          margin-right: 32px;
+          cursor: pointer;
+          text-decoration: none;
+          &:visited {
+            color: #e6e6e6;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 598px) {
+    }
+  }
 }
+
+
+
