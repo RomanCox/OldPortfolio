@@ -16,13 +16,13 @@ export const Nav = () => {
                     <a href='' className={style.navLink}>Main</a>
                     </li>
                     <li className={style.navbarItem}>
-                    <a href='' className={style.navLink}>Skillz</a>
+                    <a href='' className={style.navLink}>My Skillz</a>
                     </li>
                     <li className={style.navbarItem}>
-                    <a href='' className={style.navLink}>Projects</a>
+                    <a href='' className={style.navLink}>My Projects</a>
                     </li>
                     <li className={style.navbarItem}>
-                    <a href='' className={style.navLink}>Contacts</a>
+                    <a href='' className={style.navLink}>My Contacts</a>
                     </li>
                 </ul>
             </div>

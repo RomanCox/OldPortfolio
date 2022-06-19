@@ -22,7 +22,7 @@ export const Main = () => {
                             <h1>Roman Cox</h1>
                             <h4>{`I'm a `}
                                 <span className={style.text}>
-                                <span className={style.dropdownText}>developer1</span>
+                                <span className={style.dropdownText}>developer</span>
                                 <span className={`${style.dropdownText} ${style.hiddenText}`}>freelancer</span>
                             </span>
                             </h4>
