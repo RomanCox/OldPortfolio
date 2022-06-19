@@ -7,6 +7,9 @@ export const Nav = () => {
             <a>
                 <img></img>
             </a>
+            <div className={style.navButtonContainer}>
+                BUTTON
+            </div>
             <div className={style.navContainer}>
                 <ul className={style.navbar}>
                     <li className={style.navbarItem}>

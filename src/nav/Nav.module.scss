@@ -25,9 +25,23 @@
     }
   }
 
+  .navButtonContainer {
+    width: 100%;
+    /*@include flex(row, flex-end, center);*/
+    position: absolute;
+    justify-self: center;
+    z-index: -10;
+
+    /*@media (max-width: 598px) {
+      z-index: 1;
+    }*/
+  }
+
   .navContainer {
     width: 100%;
     @include flex(row, flex-end, center);
+    position: relative;
+    z-index: 1;
 
     .navbar {
       margin: 0 32px 0 auto;
@@ -55,7 +69,8 @@
       }
     }
 
-    @media (min-width: 598px) {
+    @media (max-width: 598px) {
+      z-index: 0;
     }
   }
 }
