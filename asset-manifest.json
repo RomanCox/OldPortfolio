@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ba90da3.css",
-    "main.js": "/static/js/main.c082b9fa.js",
+    "main.css": "/static/css/main.3cb1bbd5.css",
+    "main.js": "/static/js/main.2ed7682c.js",
     "static/media/hexagons.jpg": "/static/media/hexagons.ad601eef2411049d65db.jpg",
     "static/media/Poppins-Regular.woff": "/static/media/Poppins-Regular.79aec8d6a8c7366084a7.woff",
     "static/media/Poppins-Regular.eot": "/static/media/Poppins-Regular.2c5e884f3de8f8894716.eot",
@@ -36,11 +36,11 @@
     "static/media/social.png": "/static/media/social.0fb2037b46d787cc214b.png",
     "static/media/redux_black.png": "/static/media/redux_black.543b98d3c75b48613322.png",
     "index.html": "/index.html",
-    "main.9ba90da3.css.map": "/static/css/main.9ba90da3.css.map",
-    "main.c082b9fa.js.map": "/static/js/main.c082b9fa.js.map"
+    "main.3cb1bbd5.css.map": "/static/css/main.3cb1bbd5.css.map",
+    "main.2ed7682c.js.map": "/static/js/main.2ed7682c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ba90da3.css",
-    "static/js/main.c082b9fa.js"
+    "static/css/main.3cb1bbd5.css",
+    "static/js/main.2ed7682c.js"
   ]
 }
