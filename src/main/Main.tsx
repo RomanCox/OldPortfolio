@@ -1,30 +1,29 @@
 import React from 'react';
 import style from './Main.module.scss';
-import hexagon from '../assets/image/hexagons.jpg';
-import {Nav} from "../nav/Nav";
+import matrix from '../assets/image/mini_matrix.jpg';
+import {Nav} from '../nav/Nav';
+import {TypingText} from '../hooks/TypingText/TypingText';
 
 export const Main = () => {
 
-    const hexagonBG = {
-        backgroundImage: `url(${hexagon})`,
+    const matrixBG = {
+        backgroundImage: `url(${matrix})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-    };
+    }
+
+    const phrases = ['', 'developer', 'freelancer', 'tour agent :)']
 
     return (
         <div className={style.body}>
             <Nav/>
-            <section className={style.mainBlock} style={hexagonBG}>
+            <section className={style.mainBlock} style={matrixBG}>
                 <div className={style.container}>
                     <div className={style.center}>
-                        {/*<div className={`${styleContainer.container} ${style.mainContainer}`}>*/}
                         <div className={style.textContainer}>
-                            <h1>Roman Cox</h1>
-                            <h4>{`I'm a `}
-                                <span className={style.text}>
-                                <span className={style.dropdownText}>developer</span>
-                                <span className={`${style.dropdownText} ${style.hiddenText}`}>freelancer</span>
-                            </span>
+                            <h1 className={style.selection}>Roman Cox</h1>
+                            <h4>{`I'm a`}
+                                <TypingText phrases={phrases} />
                             </h4>
                         </div>
                     </div>

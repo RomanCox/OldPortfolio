@@ -1,6 +1,8 @@
+@import '../common/styles/sass/variables.scss';
+
 .footer {
-  border: 1px solid;
-  background-color: #f8e99f;
+  background-color: $bgColorPrimary;
+  color: $primaryTextColor;
   display: flex;
   flex-direction: column;
   justify-content: center;

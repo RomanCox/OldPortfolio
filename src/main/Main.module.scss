@@ -3,7 +3,7 @@
 
 .body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #1f1f20;
   overflow: hidden;
 
@@ -29,24 +29,30 @@
 
         .textContainer {
           height: 200px;
-          max-width: 100%;
+          width: 330px;
           text-align: center;
-          flex: 0 0 100%;
           padding-left: 15px;
           padding-right: 15px;
-          position: relative;
+          @include flex(column, center, flex-start);
 
-          &::selection {
+          .selection::selection {
+            background-color: $primaryColor;
+            color: $secondaryTextColor;
+          }
+          .selection::-moz-selection {
             background-color: #fff300;
             color: #fff;
           }
 
           & > h1 {
             @include text($textFontFamily, 52px, 700, 1.2, 1, #fff);
+            margin: 0;
           }
 
           & > h4 {
+            width: 100%;
             @include text($textFontFamily, 30px, 400, 1.2, 0.3px, #fff);
+            display: flex;
           }
 
           .text {

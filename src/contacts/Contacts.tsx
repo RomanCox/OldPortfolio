@@ -1,9 +1,23 @@
 import React from 'react';
 import style from './Contacts.module.scss';
-import styleContainer from "../common/styles/Container.module.css";
-import {Title} from "../common/components/Title/Title";
+import styleContainer from '../common/styles/Container.module.css';
+import {Title} from '../common/components/Title/Title';
+import {InputText} from '../common/components/Inputs/InputText';
+import {Textarea} from '../common/components/Inputs/Textarea';
+import {Button} from '../common/components/Button/Button';
 
 export const Contacts = () => {
+
+    let shortInput = {
+        input: {width: '190px',},
+        bar: {width: '200px'},
+    }
+
+    let longInput = {
+        input: {width: '430px'},
+        bar: {width: '450px'},
+    }
+
     return (
         <div className={style.contactsBlock}>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
@@ -13,19 +27,26 @@ export const Contacts = () => {
                         <h3>Message Me</h3>
                         <form className={style.contactForm}>
                             <div className={style.formContactBlock}>
-                                <input type='text' placeholder={'Name'}/>
-                                <input type='text' placeholder={'Email'}/>
+                                <div className={style.shortInputContainer}>
+                                    <InputText placeholder={'Name'} style={shortInput}/>
+                                </div>
+                                <div className={style.shortInputContainer}>
+                                    <InputText placeholder={'Email'} style={shortInput}/>
+                                </div>
                             </div>
-                            <div className={style.fromMessageBlock}>
-                                <textarea placeholder={'Message'}/>
+                            <div className={style.formMessageBlock}>
+                                <InputText placeholder={'Subject'} style={longInput}/>
+                                <Textarea placeholder={'Message'} rows={5} wrap={'soft'}/>
                             </div>
-                            <button type='submit'>Send message</button>
+                            <div className={style.formButtonContainer}>
+                                <Button type='submit' title={'Send message'} />
+                            </div>
                         </form>
                     </div>
                     <div className={style.contactContainer}>
-                        <h4>Contact Info</h4>
-                        <p className={style.preContacts}>Always available for freelance work if the right project comes
-                            along, Feel free to contact me!</p>
+                        <h3>Contact Info</h3>
+                        <span className={style.preContacts}>Always available for freelance work if the right project comes
+                            along, Feel free to contact me!</span>
                         <ul className={style.list}>
                             <li>
                                 <div className={style.liStyleContainer}>
@@ -60,9 +81,9 @@ export const Contacts = () => {
                                             <a
                                                 href='https://t.me/romancox'
                                                 className={style.link}
-                                                target="_blank"
+                                                target={'_blank'}
                                                 title='Telegram Messenger'
-                                            >{'@romancox'}</a>
+                                            >@romancox</a>
                                         </span>
                                     </div>
                                 </div>
@@ -78,9 +99,9 @@ export const Contacts = () => {
                                             <a
                                                 href='https://github.com/RomanCox'
                                                 className={style.link}
-                                                target="_blank"
+                                                target={'_blank'}
                                                 title='GitHub'
-                                            >{'RomanCox'}</a>
+                                            >RomanCox</a>
                                         </span>
                                     </div>
                                 </div>

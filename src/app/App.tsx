@@ -6,7 +6,7 @@ import {Projects} from "../projects/Projects";
 import {Contacts} from "../contacts/Contacts";
 import {Footer} from "../footer/Footer";
 
-function App() {
+export const App = () => {
   return (
       <div>
         <Main/>
@@ -17,5 +17,3 @@ function App() {
       </div>
   );
 }
-
-export default App;
