@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 
   .footerSocialContainer {
     width: 280px;
