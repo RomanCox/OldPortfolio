@@ -1,14 +1,15 @@
 import React from 'react';
 import style from './Main.module.scss';
-import matrix from '../assets/image/mini_matrix.jpg';
+import rainCode from '../assets/image/rainCode.png';
 import {Nav} from '../nav/Nav';
 import {TypingText} from '../hooks/TypingText/TypingText';
-import videoWebm from '../assets/video/Rain_Code.webm';
+import videoMp4 from '../assets/video/rainCode.mp4';
+import videoWebm from '../assets/video/rainCode.webm';
 
 export const Main = () => {
 
     const matrixBG = {
-        backgroundImage: `url(${matrix})`,
+        backgroundImage: `url(${rainCode})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }
@@ -22,6 +23,7 @@ export const Main = () => {
                 <div className={style.container}>
                     <div className={style.imgCover} style={matrixBG}></div>
                     <video preload='auto' autoPlay muted loop className={style.video}>
+                        <source type='video/mp4' src={videoMp4} />
                         <source type='video/webm' src={videoWebm} />
                     </video>
                     <div className={style.center}>
