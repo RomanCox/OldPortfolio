@@ -17,8 +17,9 @@ export const Main = () => {
     return (
         <div className={style.body}>
             <Nav/>
-            <section className={style.mainBlock} style={matrixBG}>
+            <section className={style.mainBlock}>
                 <div className={style.container}>
+                    <div className={style.imgCover} style={matrixBG}></div>
                     <div className={style.center}>
                         <div className={style.textContainer}>
                             <h1 className={style.selection}>Roman Cox</h1>
