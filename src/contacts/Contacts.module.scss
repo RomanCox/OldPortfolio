@@ -18,7 +18,7 @@
       .formContainer {
         max-width: 450px;
         height: 375px;
-        @include flex(column, flex-start, start);
+        @include flex(column, flex-start, flex-start);
 
         & h3 {
           margin-top: 0;
@@ -59,7 +59,7 @@
       .contactContainer {
         max-width: 450px;
         height: 375px;
-        @include flex(column, space-between, start);
+        @include flex(column, space-between, flex-start);
 
         & h3 {
           margin-top: 0;
@@ -147,7 +147,7 @@
               & h6 {
                 margin: 0;
               }
-              @include flex(column, flex-start, start);
+              @include flex(column, flex-start, flex-start);
               .nameTitle {
                 @include text($titleFontFamily, 15px, 600, 1, normal, $primaryTextColor)
               }
