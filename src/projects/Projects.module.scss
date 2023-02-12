@@ -2,8 +2,10 @@
 
 .projectsBlock {
   /*min-height: 100vh;*/
-  background-color: $bgColorPrimary;
+  height: calc(100vh - 200px);
+  width: 100%;
   padding: 100px 0;
+  background-color: $bgColorPrimary;
   position: relative;
   z-index: 2;
 

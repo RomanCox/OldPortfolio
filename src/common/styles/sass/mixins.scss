@@ -9,9 +9,10 @@
   color: $textColor;
 }
 
-@mixin flex($flexDirection, $justifyContent, $alignItems) {
+@mixin flex($flexDirection, $justifyContent, $alignItems, $gap: 0) {
   display: flex;
   flex-direction: $flexDirection;
   justify-content: $justifyContent;
   align-items: $alignItems;
+  gap: $gap;
 }

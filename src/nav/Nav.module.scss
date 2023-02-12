@@ -39,31 +39,30 @@
 
   .navContainer {
     width: 100%;
-    @include flex(row, flex-end, center);
+    @include flex(row, flex-end, center, 32px);
     position: relative;
     z-index: 1;
 
     .navbar {
-      margin: 0 32px 0 auto;
-      display: flex;
+      @include flex(row, space-between, center, 20px);
       list-style: none;
       padding-left: 0;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-      padding-inline-start: 40px;
+      //margin-block-start: 1em;
+      //margin-block-end: 1em;
+      //margin-inline-start: 0;
+      //margin-inline-end: 0;
+      //padding-inline-start: 40px;
 
       .navbarItem {
         display: list-item;
         text-align: -webkit-match-parent;
 
-        .navLink {
-          margin-right: 32px;
+        a {
           cursor: pointer;
+          @include text($titleFontFamily, 20px, 400, 1.2, normal, $primaryTextColor);
           text-decoration: none;
           &:visited {
-            color: #e6e6e6;
+            color: $primaryTextColor;
           }
         }
       }

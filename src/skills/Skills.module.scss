@@ -2,6 +2,8 @@
 
 .skillsBlock {
   /*min-height: 100vh;*/
+  height: calc(100vh - 200px);
+  width: 100%;
   background-color: $bgColorPrimary;
   padding: 100px 0;
   position: relative;

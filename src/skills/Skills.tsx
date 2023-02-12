@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss';
+import styleCloseButton from '../common/styles/CloseButton.module.scss';
 import {Skill} from './skill/Skill';
 import {Title} from '../common/components/Title/Title';
 import jsImage from '../assets/image/js.png';
@@ -9,6 +10,8 @@ import reactImage from '../assets/image/react.png';
 import reduxImage from '../assets/image/redux_black.png';
 import cssImage from '../assets/image/css3_white.png';
 import sassImage from '../assets/image/sass.png';
+import {PATH} from "../app/App";
+import {NavLink} from "react-router-dom";
 
 export const Skills = () => {
 
@@ -33,6 +36,9 @@ export const Skills = () => {
 
     return (
         <div className={style.skillsBlock}>
+            <NavLink to={PATH.MAIN} className={styleCloseButton.buttonContainer}>
+                <div className={styleCloseButton.button} />
+            </NavLink>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={'My Skillz'}/>
                 <div className={style.skills}>

@@ -1,10 +1,13 @@
 import React from 'react';
 import style from './Contacts.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
+import styleContainer from '../common/styles/Container.module.scss';
 import {Title} from '../common/components/Title/Title';
 import {InputText} from '../common/components/Inputs/InputText';
 import {Textarea} from '../common/components/Inputs/Textarea';
 import {Button} from '../common/components/Button/Button';
+import {PATH} from "../app/App";
+import styleCloseButton from "../common/styles/CloseButton.module.scss";
+import {NavLink} from "react-router-dom";
 
 export const Contacts = () => {
 
@@ -20,6 +23,9 @@ export const Contacts = () => {
 
     return (
         <div className={style.contactsBlock}>
+            <NavLink to={PATH.MAIN} className={styleCloseButton.buttonContainer}>
+                <div className={styleCloseButton.button} />
+            </NavLink>
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title title={'Get in Touch'}/>
                 <div className={style.contactInfo}>
